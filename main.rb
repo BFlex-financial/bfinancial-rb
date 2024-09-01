@@ -6,7 +6,7 @@ def createPayment(key, data)
   url = URI.parse('http://127.0.0.1:8080/payment/create')
   http = Net::HTTP.new(url.host, url.port)
   request = Net::HTTP::Post.new(url.request_uri)
-  request['Authorization-key'] = key
+  request['Authorization-key'] = "Bearer #{key}"
   request.content_type = 'application/json'
   request.body = data
   response = http.request(request)
