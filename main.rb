@@ -1,3 +1,5 @@
+# By. Lucas Silveira <contato.lucasdwbfff@gmail.com>
+
 require 'net/http'
 require 'uri'
 require 'json'
